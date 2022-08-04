@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+  <div class="main">
+   <header class=top>
+       <h1 class="title">Survey Form</h1>
+       <p class="description">Thank you for taking your time to Give Us Feedback</p>  
+   </header> 
+   <form class="bottom">
+       <div>
+           <label for= "Name"> Name </label>
+           <input type="text" id="name" name="name" placeholder="Enter Your Name" required/>
+       </div>
+       <div>
+         <label for= "email"> Email </label> 
+         <input type="email" id="email" name="email" placeholder="Enter Your Email"/>  
+       </div>
+       <div>
+         <label for= "age"> Age </label> 
+         <input type="number" id="age" name="age" placeholder="Enter Your Age"/>  
+       </div>
+            <div class="role">
+              <label for= "role">Choose A Role That Best Describes You</label><br>
+              <select name= select-role id="role"><br>
+              <option value="Select Your Role ">Select Your Role</option>
+              <option value="doctor">Doctor</option>
+              <option value="developer">Developer</option>
+              <option value="fashion designer">Fashion designer</option>
+              <option value="hair stylist">Hair Stylist</option>
+              </select>  
+            </div>
+            <div class="recommend">
+             <label for= "recommend"> Would you Recommend Our Product To A Friend? </label><br>
+             <input type="radio" id="Never" name="recommend" value="Never"/>Never<br>
+             <input type="radio" id="Maybe" name="recommend" value="Maybe"/>Maybe<br>
+             <input type="radio" id="Likely" name="recommend" value="Likely"/>Likely<br>
+             <input type="radio" id="Definitely" name="recommend" value="Definitely"/>Definitely <br> 
+           </div>
+           <div class="selection">
+             <label for= "selection"> Select Things You Liked About Our Product</label><br>
+             <input type="checkbox" id="ui" name="selection" value="UI"/>UI<br>
+             <input type="checkbox" id="features" name="selection" value="Features"/>Features<br>
+             <input type="checkbox" id="service" name="selection" value="Service"/>Service<br>
+             <input type="checkbox" id="simpleness" name="selection" value="Simpleness"/>Simpleness<br>   
+           </div>
+             <label for="message">Remarks</label><br>
+             <textarea name="message" cols ="20" rows="10" value="" placeholder="Tell Us How Can We Improve..." ></textarea>
+           <div class=submit>
+             <input type="submit" id="Submit"></input>
+           </div>     
+   </form>
+  </div>
+</body>
+</html>
