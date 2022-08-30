@@ -15,48 +15,50 @@
   <div class="main">
    <header class=top>
        <h1 class="title">Survey Form</h1>
-       <p class="description">Thank you for taking your time to Give Us Feedback</p>  
+       <p class="description"><i>Thank you for taking your time to Give Us Feedback</i></p>  
    </header> 
    <form class="bottom">
-       <div>
+       <div class="name-div general">
            <label for= "Name"> Name </label>
            <input type="text" id="name" name="name" placeholder="Enter Your Name" required/>
        </div>
-       <div>
+       <div class="general email-div" >
          <label for= "email"> Email </label> 
          <input type="email" id="email" name="email" placeholder="Enter Your Email"/>  
        </div>
-       <div>
+       <div class="age-div general">
          <label for= "age"> Age </label> 
          <input type="number" id="age" name="age" placeholder="Enter Your Age"/>  
        </div>
-            <div class="role">
+            <div class="role general">
               <label for= "role">Choose A Role That Best Describes You</label><br>
               <select name= select-role id="role"><br>
-              <option value="Select Your Role ">Select Your Role</option>
+              <option value="Select Your Role" >Select Your Role</option>
               <option value="doctor">Doctor</option>
               <option value="developer">Developer</option>
               <option value="fashion designer">Fashion designer</option>
               <option value="hair stylist">Hair Stylist</option>
               </select>  
             </div>
-            <div class="recommend">
+            <div class="recommend general">
              <label for= "recommend"> Would you Recommend Our Product To A Friend? </label><br>
              <input type="radio" id="Never" name="recommend" value="Never"/>Never<br>
              <input type="radio" id="Maybe" name="recommend" value="Maybe"/>Maybe<br>
              <input type="radio" id="Likely" name="recommend" value="Likely"/>Likely<br>
              <input type="radio" id="Definitely" name="recommend" value="Definitely"/>Definitely <br> 
            </div>
-           <div class="selection">
+           <div class="selection general">
              <label for= "selection"> Select Things You Liked About Our Product</label><br>
              <input type="checkbox" id="ui" name="selection" value="UI"/>UI<br>
              <input type="checkbox" id="features" name="selection" value="Features"/>Features<br>
              <input type="checkbox" id="service" name="selection" value="Service"/>Service<br>
              <input type="checkbox" id="simpleness" name="selection" value="Simpleness"/>Simpleness<br>   
            </div>
+           <div class="remarks general">
              <label for="message">Remarks</label><br>
              <textarea name="message" cols ="20" rows="10" value="" placeholder="Tell Us How Can We Improve..." ></textarea>
-           <div class=submit>
+            </div>
+             <div class="submit general">
              <input type="submit" id="Submit"></input>
            </div>     
    </form>

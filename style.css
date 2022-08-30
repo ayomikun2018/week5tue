@@ -6,95 +6,64 @@
 body{
     font-family: "Montserrat",sans-serif;
     width: 100%;
-    height: 100%;
     background-color: rgba(202, 95, 113, 0.925);
    
 }
 .main{
-    background-color: whitesmoke;
-    margin-top: 50px;
-    margin-left: 34%;
-    margin-right: 35%;
-    height: 2000%;
-    width: 30%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-bottom: 40px;
+    height: 80%;
+    width: 90%;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    line-height: 1.3;
+    margin:20px;
     box-shadow: 10px 3px 8px 1px rgba(0,0,0,0.19);
     -webkit-box-shadow: 10px 3px 8px 1px rgba(0,0,0,0.19);
     -moz-box-shadow: 10px 3px 8px 1px rgba(0,0,0,0.19);
-    border-radius: 10px;
-}
-.top{
-    text-align: center;
-    color: rgb(13, 13, 13);
 }
 .title{
-font-size:30px;
-padding-bottom: 2px;
+    text-align: center;
+    padding:10px;
 }
 .description{
-    font-size:15px
+    font-size: 10px;
+    text-align: center;
 }
 .bottom{
- width: 100%;
- margin-top: 10px;
- padding-left: 20px;
- padding-right: 20px;
-}
-#name{
-    margin:5px;
-    gap: 1;
     display: flex;
     flex-direction: column;
-    width:100%;
-    height: 25px;
+    line-height: 1.5;
+    justify-content: space-between;
 }
-#email{
-    margin: 5px;
-    gap: 1;
+.name-div, .email-div, .age-div{
     display: flex;
     flex-direction: column;
-    width:100%;
-    height: 25px;
+    padding: 3px 0;
 }
-#age{
-    margin: 5px;
-    gap: 1;
-    display: flex;
-    flex-direction: column;
-    width:100%;
+#name, #email, #age{
     height: 25px;
+    padding:10px;
 }
-.role{
-    margin: 5px;
-    border: none;
-    gap: 1;    
-    border-radius: 5px;
+.general{
+    margin-bottom: 5px;
 }
 #role{
-    width: 102%; 
-    height: 27px;
-    gap: 1;
+    width: 100%; 
+    height: 25px;
     display: flex;
     flex-direction: column;
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 5px;
 }
 .recommend{
     font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 5px; 
-    /* margin: 5px; */
-    padding: 5px;
+    font-weight: 400; 
+    padding:5px;
 }
 .selection{
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 5px; 
-    /* margin: 5px;   */
-    padding: 5px;
+    padding:5px;
 }
 input[type="submit"]{
     text-align: center;
@@ -106,4 +75,13 @@ input[type="submit"]:hover{
     background-color: grey;
     color: white; 
     padding: 5px;
+}
+@media (min-width:768px) {
+  body{
+      width:50%;
+      margin : 0 auto;
+  } 
+  main{
+      border:1px solid green;
+  } 
 }
